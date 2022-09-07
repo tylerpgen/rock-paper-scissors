@@ -2,12 +2,12 @@ let getComputerChoice = () => {
   const randomNum = Math.floor(Math.random() * 3) + 1;
 
   if (randomNum === 1) {
-    console.log("Rock");
+    return "rock";
   } else if (randomNum === 2) {
-    console.log("Paper");
+    return "paper";
   } else {
-    console.log("Scissors");
+    return "scissors";
   }
 };
 
-getComputerChoice();
+console.log(getComputerChoice());
