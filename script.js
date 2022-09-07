@@ -53,6 +53,12 @@ let playRound = (playerSelection, computerSelection) => {
   }
 };
 
-const playerSelection = prompt("Rock Paper or Scissors").toLowerCase();
-computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+let game = () => {
+  for (let i = 0; i < 5; i++) {
+    const playerSelection = prompt("Rock Paper or Scissors").toLowerCase();
+    computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
+  }
+};
+
+game();
